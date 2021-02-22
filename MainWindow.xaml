@@ -1,0 +1,22 @@
+﻿<Window x:Class="Hangar13Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hangar13Test"
+        mc:Ignorable="d"
+        Title="Hangar 13 Test" Height="600" Width="800">
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Width="100">
+                <!-- Number of items in the selected folder -->
+                <TextBlock Text="4 items"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <!-- Statistics about the selected file/folder -->
+                <TextBlock Text="Contains 2 Folders, 8 Files  2.61 MB"/>
+            </StatusBarItem>
+        </StatusBar>
+        <TreeView Name="treeView"/>
+    </DockPanel>
+</Window>
