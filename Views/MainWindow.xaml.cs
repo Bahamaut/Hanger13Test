@@ -1,4 +1,5 @@
 ﻿using Hangar13Test.ViewModels;
+using System.IO;
 using System.Windows;
 
 namespace Hangar13Test
@@ -8,13 +9,13 @@ namespace Hangar13Test
     /// </summary>
     public partial class MainWindow : Window
 	{
-		private readonly MainWindowViewModel _viewModel;
+		private readonly DriveViewModel _viewModel;
 
 		public MainWindow()
 		{
 			InitializeComponent();
 
-			_viewModel = new MainWindowViewModel();
+			_viewModel = new DriveViewModel();
 			DataContext = _viewModel;
 		}
 	}
